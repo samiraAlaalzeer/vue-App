@@ -9,9 +9,9 @@ import GetLen from "./components/GetLen.vue";
 
 <template>
   <Alert></Alert>
-  <IT v-bind:IT="employess"></IT>
+  <IT v-bind:IT="employess" ></IT>
   <div class="my-main">
-    <HR v-bind:HR="employess"></HR>
+    <HR v-bind:HR="employess" @delete="deleteEmployes"></HR>
   </div>
   <Welcome v-bind:massage="massage"></Welcome>
   <GetLen></GetLen>
@@ -25,9 +25,9 @@ export default {
     Welcome,
     GetLen,
     Alert,
-    Alert,
     
   },
+  
   data() {
     {
       return {
@@ -57,10 +57,17 @@ export default {
         massage: "welcome in vue ",
         
       };
+
       
     }
   },
+  methods: {
+    deleteEmployes(name) {
+      this.employess = this.employess.filter((employes) => employes.name!== name);
+    },
+  },
 };
+
 </script>
 <style scoped>
 header {

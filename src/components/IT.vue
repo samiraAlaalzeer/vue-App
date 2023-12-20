@@ -9,6 +9,11 @@
 export default {
   name: "IT",
   props: ["IT"],
+  methods:{
+    deleteHr(name){
+      this.$emit('delete',{name})
+    }
+  }
 };
 </script>
 <style>
