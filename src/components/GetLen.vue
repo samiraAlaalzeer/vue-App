@@ -20,6 +20,7 @@ export default {
         { category: "C++" },
         { category: "HTML" },
         { category: "CSS" },
+        {category:"test js"}
       ],
     };
   },

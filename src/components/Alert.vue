@@ -57,7 +57,7 @@ export default {
   border: 1px solid #ccc;
   padding: 10px;
   margin-top: 10px;
-  background-color: #f8d7da; /* Bootstrap's danger color */
-  color: #0e0791; /* Bootstrap's danger text color */
+  background-color: #010e71; /* Bootstrap's danger color */
+  color: #ffffff; /* Bootstrap's danger text color */
 }
 </style>
